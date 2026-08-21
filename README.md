@@ -1,6 +1,6 @@
-# COPE Monthly Report Automation
+# Project Monthly Reporting
 
-Automated monthly impact reporting pipeline for the COPE: Counseling, Outreach, and Protection for Emergencies program that earthquake response initiative providing psychosocial support and disability inclusion services.
+Automated monthly reporting pipeline for the COPE: Counseling, Outreach, and Protection for Emergencies program that earthquake response initiative providing psychosocial support and disability inclusion services.
 
 ---
 
@@ -69,7 +69,7 @@ The `classify_disability_code()` function parses the free-text `AdditionalInfo` 
 
 ### Cumulative Deduplication
 
-`cumulative_IDs.xlsx` is read at the start of each run and appended at the end. Each row records a TrID, demographic fields, service type, and reporting month. The `filter_new_beneficiaries()` function removes any TrID already present in the cumulative file for a given service type, preventing double-counting across reporting periods.
+`cumulative_IDs.xlsx` is read at the start of each run and appended at the end. Each row records a ID, demographic fields, service type, and reporting month. The `filter_new_beneficiaries()` function removes any TrID already present in the cumulative file for a given service type, preventing double-counting across reporting periods.
 
 ### Cross-Service Deduplication Note
 
